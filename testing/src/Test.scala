@@ -65,10 +65,95 @@ object HelloWorld {
        
        
       
+      var h = 0;
+      for(kkk <- numList){
+         
+        h = kkk;
+        
+        for(jjjj <- numList){
+          //  println(jjjj);
+          //  println(numList(jjjj-1));
+            
+            
+          
+        }
+        
+        //  println(kkk);
+        
+        
+      }
+      
+//Selection Sort 
+// -------------------------------------------------------------------------------------------------------------      
+      var Array2 = Array(54,6,734,48);
+      
+       for(g<- 0 to Array2.length-1){
+        
+        println(Array2(g));
+        
+      }
       
       
+     
+      var temp = 0; 
+      
+      for(i <- 0 to Array2.length-1){
+        
+        for( j <- 0 to i){
+          
+          if(Array2(i) < Array2(j)){
+            println("Swap");
+            println("-------------------------------------------");
+            temp = Array2(i);
+            
+            Array2(i) = Array2(j);
+           
+            Array2(j) = temp; 
+            for(g<- 0 to Array2.length-1){
+                
+                println(Array2(g));
+        
+            }
+            println("-------------------------------------------");
+          }
+          
+        }
+        
+        
+        
+      }
+      
+      println("-------------------------------------------------");
+      for(g<- 0 to Array2.length-1){
+        
+        println(Array2(g));
+        
+      }
+//End
+//-----------------------------------------------------------------------------------------------------------
+//Linear Search 
+      
+      var targ = 54;
+      var found = false; 
+      
+      for(lk<- 0 to Array2.length-1){
+        
+        if(targ == Array2(lk)){
+          found = true; 
+          
+          
+        }
+        
+        
+        
+      }
+      
+      println(found); 
       
        
     
+      
+      
+      
   }
 }
