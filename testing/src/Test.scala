@@ -7,6 +7,8 @@
 object HelloWorld {
   
   
+ 
+  
   def main(args: Array[String]): Unit = {
     println("Hello, world!")
     
@@ -94,7 +96,7 @@ object HelloWorld {
       }
       
       
-     
+      //var Array2 = Array(54,6,734,48);
       var temp = 0; 
       
       for(i <- 0 to Array2.length-1){
@@ -129,12 +131,16 @@ object HelloWorld {
         println(Array2(g));
         
       }
+  }
 //End
 //-----------------------------------------------------------------------------------------------------------
 //Linear Search 
       
-      var targ = 54;
-      var found = false; 
+       //var Array2 = Array(54,6,734,48);
+      def findtarg(x:Int){
+       var Array2 = Array(54,6,734,48);
+       var targ = x;
+       var found = false; 
       
       for(lk<- 0 to Array2.length-1){
         
@@ -152,8 +158,7 @@ object HelloWorld {
       
        
     
-      
+      }
       
       
   }
-}
